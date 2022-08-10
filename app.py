@@ -55,7 +55,7 @@ st.dataframe(df)
 df['평점'] = df['평점'].astype('int') 
 dfg = df.groupby('영화명').mean()
 
-st.bar_chart(dfg, height = 500)
+st.bar_chart(dfg)
 
 option = st.selectbox(
     '영화를 선택하세요.',
