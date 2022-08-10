@@ -50,4 +50,4 @@ for item in trs :
 
 st.title('네이버 영화평')
 st.dataframe(df)
-st.table(df)
+#st.table(df)
