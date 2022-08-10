@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup as bs
 url = 'https://movie.naver.com/movie/point/af/list.naver'
 webpage =  urlopen(url).read().decode()
 
-naver_mvnews =  bs(webpage, 'html.parser')
+naver =  bs(webpage, 'html.parser')
 
 trs = naver.select('#old_content > table tr')[1:]
 
